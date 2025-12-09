@@ -1,35 +1,79 @@
-# Airbnb Clone – Features and Functionalities
+# ALX Airbnb Project Documentation — Ready Deliverables
 
-## 1. User Management
-- Register a new account (email, password, name)
-- Login/Logout using JWT authentication
-- View and update user profile
-- Password reset via email
+## File: features-and-functionalities/README.md
 
-## 2. Property Management
-- Host can create, read, update, delete (CRUD) property listings
-- Add property details: title, description, price, location, images
-- Search and filter listings by city, price, or amenities
-- View property details
+
+# Airbnb Backend — Features & Functionalities
+
+This document outlines the core backend features required to power an Airbnb-style booking platform.
+
+## 1. User Authentication & Management
+- Register account
+- Login with email + password
+- JWT-based authentication
+- Update user profile
+- Upload profile photo
+- Delete account
+- Password reset (email)
+- Role management (guest, host, admin)
+
+## 2. Property Listings Management
+- Host can create property listings
+- Add property details (title, description, price, location, amenities)
+- Upload multiple images
+- Update property details
+- Delete listing
+- Drafts and publish states
+- Search/filter listings by:
+  - Location
+  - Price range
+  - Number of rooms
+  - Property type
+  - Amenities
+  - Availability dates
 
 ## 3. Booking System
-- User can book available properties
-- Prevent double-booking for same date range
-- Cancel booking (if within allowed time)
-- View user booking history
+- User can request bookings
+- Host can approve/reject bookings
+- Guests receive booking confirmation
+- Users can view booking history
+- Auto-calculate total cost (nights × price + fees)
+- Prevent double-booking
+- Date availability calendar
+- Booking cancellations & refund policies
+- Notifications (email/websocket) for important events
 
 ## 4. Payments
-- Secure checkout using Stripe API
-- View transaction status (pending, successful, failed)
-- Generate receipts
+- Integration with Stripe (or PayPal)
+- Create checkout session and confirm payment
+- Webhook handling for payment events
+- Capture payments and issue refunds
+- Store transactional records in Payments table
 
-## 5. Reviews and Ratings
-- Guests can review and rate properties after stay
-- Hosts can respond to reviews
+## 5. Reviews & Ratings
+- Guests can leave reviews for properties
+- Star rating system
+- Hosts can reply to reviews
+- Aggregate rating computed for listings
 
-## 6. Admin Panel
-- View all users and listings
-- Manage flagged content or users
+## 6. Admin Functionality
+- View all users
+- Deactivate or remove user accounts
+- View all properties
+- Remove or flag inappropriate listings
+- Access system logs / audit trail
 
-## 7. Notifications
-- Email notifications for booking confirmation, cancellation, etc.
+## 7. Extra / Optional Features
+- Saved favorites / wishlists
+- Host verification (ID upload)
+- Messaging between guest and host
+- Image optimization & CDN
+- Rate limiting and basic abuse prevention
+
+
+
+
+
+
+
+
